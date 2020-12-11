@@ -1,251 +1,242 @@
-html, body {
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 .navbar {
-    background-color:  #2f323b ;
-    /* padding: 4px 0 6px 0; */
-    font-size: 1.2em;
+  background-color: #2f323b;
+  /* padding: 4px 0 6px 0; */
+  font-size: 1.2em;
 }
 .navbar-brand {
-    max-height: 55px;
-    padding: 0 0 2px 0;
-    vertical-align: center;
+  max-height: 55px;
+  padding: 0 0 2px 0;
+  vertical-align: center;
 }
 
-.navbar-brand img{
-    max-height: 52px;
-    padding: 0 0 2px 0;
-    vertical-align: top;
+.navbar-brand img {
+  max-height: 52px;
+  padding: 0 0 2px 0;
+  vertical-align: top;
 }
-.navbar-default .navbar-nav li a { 
-    color: #D5D5D5
+.navbar-default .navbar-nav li a {
+  color: #d5d5d5;
 }
-.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active { 
-    color: #FFFFFF
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a.active {
+  color: #ffffff;
 }
 .landing-text {
-    color: #ffffff;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    border: thick
+  color: #ffffff;
+  display: table-cell;
+  text-align: center;
+  vertical-align: top;
+  border: thick;
+  padding-top: 9%;
 }
 .landing-text h1 {
-    font-size: 500%;
-    font-weight: 700%;
-}  
+  font-size: 500%;
+  font-weight: 700%;
+}
 
 #Home {
-    background: linear-gradient(
-        rgba(47, 50, 59, 0.5),
-        rgba(47, 50, 59, 0.5)
-      ), url(img/landing_bg.png) no-repeat center center fixed;
+  background: linear-gradient(rgba(47, 50, 59, 0.5), rgba(47, 50, 59, 0.75)),
+    url(img/landing_bg.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+.landing-text h1 {
+  font-size: 500%;
+  font-weight: 700%;
+}
+.padding {
+  padding: 5% 0;
+}
+.padding img {
+  width: 100%;
+}
+
+.smallpadding {
+  padding: 2% 0;
+}
+.smallpadding img {
+  width: 100%;
+}
+.img-side {
+  padding: 25px 0 0 0;
+}
+
+h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+h3 {
+  font-family: "Courier New", Courier, monospace;
+}
+h4 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#fixed1 {
+  background: linear-gradient(rgba(47, 50, 59, 0.5), rgba(47, 50, 59, 0.5)),
+    url(img/whitewashed-bg.png) no-repeat center center fixed;
+  display: table;
+  height: 60%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+#fixed2 {
+  background: linear-gradient(rgba(47, 50, 59, 0.5), rgba(47, 50, 59, 0.5)),
+    url(img/whitewashed-bg.png) no-repeat center center fixed;
+  display: table;
+  height: 60%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+footer {
+  width: 100%;
+  background-color: #2f323b;
+  padding: 5% 5% 8% 5%;
+  color: #ffffff;
+}
+
+.author-credit {
+  color: rgb(212, 203, 203);
+  font-size: 8px;
+}
+.author-credit a {
+  color: rgb(212, 203, 203);
+}
+.author-credit a:hover {
+  color: #d5d5d5;
+}
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  color: #ffffff;
+}
+.fa:hover {
+  color: #d5d5d5;
+  text-decoration: none;
+}
+.fab {
+  padding: 15px;
+  font-size: 25px;
+  color: #ffffff;
+}
+.fab:hover {
+  color: #d5d5d5;
+  text-decoration: none;
+}
+.icon {
+  max-width: 200px;
+}
+.lead a {
+  color: darkslategray;
+}
+.lead a:hover {
+  color: #d5d5d5;
+  text-decoration: none;
+}
+.about-site a {
+  color: #ffffff;
+}
+.about-site a:hover {
+  color: #d5d5d5;
+  text-decoration: none;
+}
+
+/* carousel */
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#quote-carousel .carousel-inner {
+  min-height: 150px;
+}
+
+/* indicator position */
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: -10px;
+  margin-right: -19px;
+}
+/* indicator color */
+#quote-carousel .carousel-indicators li {
+  background: #c0c0c0;
+}
+/* active indicator */
+#quote-carousel .carousel-indicators .active {
+  background: #333333;
+  height: 10px;
+  width: 10px;
+  margin-bottom: 1px;
+}
+
+@media (max-width: 768px) {
+  .landing-text h1 {
+    font-size: 300%;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .fab {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .icon {
+    padding: 5%;
+    max-width: 100px;
+  }
+
+  .side-img {
+    display: none;
+  }
+
+  /*Disable the fixed background due to issue on */
+  #Home {
+    background: linear-gradient(rgba(47, 50, 59, 0.5), rgba(47, 50, 59, 0.75)),
+      url(img/landing_bg.jpg) no-repeat center center;
     display: table;
     height: 100%;
     position: relative;
     width: 100%;
     background-size: cover;
-}
-.landing-text h1 {
-    font-size: 500%;
-    font-weight: 700%;
-}
-.padding {
-    padding: 5% 0;
-}
-.padding img{
-    width:100%;
-}
+  }
 
-.smallpadding {
-    padding: 2% 0;
-}
-.smallpadding img{
-    width:100%;
-}
-.img-side {
-    padding: 25px 0 0 0;
-}
+  #fixed1 {
+    display: none;
+  }
 
-h2 {
-    font-family: 'Courier New', Courier, monospace
-}
-h3 {
-    font-family: 'Courier New', Courier, monospace
-}
-h4{
-    font-family: 'Courier New', Courier, monospace    
-}
-
-#fixed1 {
-    background: linear-gradient(
-        rgba(47, 50, 59, 0.5),
-        rgba(47, 50, 59, 0.5)
-      ), url(img/whitewashed-bg.png) no-repeat center center fixed;
-    display:table;
-    height: 60%;
-    position: relative;
-    width: 100%;
-    background-size: cover;
-}
-#fixed2 {
-    background: linear-gradient(
-         rgba(47, 50, 59, 0.5),
-         rgba(47, 50, 59, 0.5)
-      ), url(img/whitewashed-bg.png) no-repeat center center fixed;
-    display:table;
-    height: 60%;
-    position: relative;
-    width: 100%;
-    background-size: cover;
-}
-footer {
-    width:100%;
-    background-color: #2f323b;
-    padding: 5% 5% 8% 5%;
-    color: #FFFFFF
-}
-
-.author-credit {
-    color: rgb(212, 203, 203);
-    font-size: 8px;
-}
-.author-credit a {
-    color: rgb(212, 203, 203);
-}
-.author-credit a:hover {
-    color: #D5D5D5;
-} 
-.fa {
-    padding: 15px;
-    font-size: 25px;
-    color: #FFFFFF;
-}
-.fa:hover {
-     color: #D5D5D5;
-     text-decoration: none;
-}
-.fab {
-    padding: 15px;
-    font-size: 25px;
-    color: #FFFFFF;
-}
-.fab:hover {
-     color: #D5D5D5;
-     text-decoration: none;
-}
-.icon {
-     max-width: 200px;
-}
-.lead a {
-    color: darkslategray;
-}
-.lead a:hover {
-    color: #D5D5D5;
-    text-decoration: none;
-}
-.about-site a {
-    color: #FFFFFF;
-}
-.about-site a:hover {
-    color: #D5D5D5;
-    text-decoration: none;
-}
-
-/* carousel */
-#quote-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 30px;
-    text-align:center;
-}
-
-#quote-carousel .carousel-inner {
-    min-height: 150px;
-}
-
-/* indicator position */
-#quote-carousel .carousel-indicators {
-    right: 50%;
-    top: auto;
-    bottom: -10px;
-    margin-right: -19px;
-}
-/* indicator color */
-#quote-carousel .carousel-indicators li {
-    background: #c0c0c0;
-}
-/* active indicator */
-#quote-carousel .carousel-indicators .active {
-    background: #333333;
-    height:10px;
-    width:10px;
-    margin-bottom:1px;
-}
-
-@media (max-width: 768px) {
-    .landing-text h1 {
-        font-size: 300%;
-    }
-    .fa {
-        padding: 10px;
-        font-size: 20px;
-    }
-    .fab {
-        padding: 10px;
-        font-size: 20px;
-    }
-    .icon {
-        padding: 5%;
-        max-width: 100px;
-    }   
-
-    .side-img {
-        display: none;
-    }
-
-    
-    /*Disable the fixed background due to issue on */
-    #Home {
-        background: linear-gradient(
-            rgba(47, 50, 59, 0.5),
-            rgba(47, 50, 59, 0.5)
-          ), url(img/landing_bg.png) no-repeat left center;
-        display: table;
-        height: 100%;
-        position: relative;
-        width: 100%;
-        background-size: cover;
-    }
-
-    #fixed1 {
-        display:none;
-    }
-
-    #fixed2 {
-        display:none;
-    }
-    
+  #fixed2 {
+    display: none;
+  }
 }
 @supports (-webkit-overflow-scrolling: touch) {
-    /*Also Disable the fixed background on ipad*/
-    #Home {
-        background: linear-gradient(
-            rgba(47, 50, 59, 0.5),
-            rgba(47, 50, 59, 0.5)
-          ), url(img/landing_bg.png) no-repeat left center;
-        display: table;
-        height: 100%;
-        position: relative;
-        width: 100%;
-        background-size: cover;
-    }
+  /*Also Disable the fixed background on ipad*/
+  #Home {
+    background: linear-gradient(rgba(47, 50, 59, 0.5), rgba(47, 50, 59, 0.75)),
+      url(img/landing_bg.jpg) no-repeat left center;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+  }
 
-    #fixed1 {
-        display:none;
-    }
+  #fixed1 {
+    display: none;
+  }
 
-    #fixed2 {
-        display:none;
-    }
+  #fixed2 {
+    display: none;
+  }
 }
